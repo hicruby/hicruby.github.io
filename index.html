@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ruby H — Engineer & Storyteller</title>
+  <meta name="description" content="Ruby H — a software engineer working in data, automation, and AI. Engineering precision, a life with light." />
+
+  <!-- Open Graph (社群分享預覽) -->
+  <meta property="og:title" content="Ruby H — Engineer & Storyteller" />
+  <meta property="og:description" content="Engineering precision, a life with light." />
+  <meta property="og:type" content="website" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <!-- ===== Nav ===== -->
+  <header class="nav" id="nav">
+    <a href="#top" class="nav__brand">Ruby Hsiao<span class="dot">.</span></a>
+    <nav class="nav__links">
+      <a href="#lens">Lens</a>
+      <a href="#coffee">Coffee</a>
+      <a href="#work">Work</a>
+      <a href="#life">Life</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <!-- ===== Hero ===== -->
+    <section class="hero">
+      <div class="hero__inner reveal">
+        <p class="hero__eyebrow">Software Engineer · Data · Automation · AI</p>
+        <h1 class="hero__title">
+          I build systems that hold,<br />and chase light that breathes.
+        </h1>
+        <p class="hero__sub">
+          By day, I make complex things simple — data, automation, and bringing AI into real work.
+          After hours, a cup of coffee and a camera turn ordinary days into stories.
+          Engineering is my language; growth is my habit.
+        </p>
+        <div class="hero__cta">
+          <a href="#lens" class="btn btn--solid">See the light I shoot</a>
+          <a href="#work" class="btn btn--ghost">See what I build</a>
+        </div>
+      </div>
+      <div class="hero__scroll" aria-hidden="true">
+        <span></span> scroll
+      </div>
+    </section>
+
+    <!-- ===== Through the Lens ===== -->
+    <section class="section" id="lens">
+      <div class="section__head reveal">
+        <span class="section__index">01</span>
+        <h2 class="section__title">Through the lens</h2>
+        <p class="section__note">I capture life in light and shadow. A few favorites here — more on Instagram.</p>
+      </div>
+      <div class="gallery" id="gallery">
+        <!-- 由 data/photos.js + js/main.js 動態產生 -->
+      </div>
+      <div class="lens__cta reveal">
+        <a href="https://instagram.com/" target="_blank" rel="noopener" class="btn btn--ghost" id="ig-link">See more on Instagram →</a>
+      </div>
+    </section>
+
+    <!-- ===== Coffee & craft ===== -->
+    <section class="section section--alt" id="coffee">
+      <div class="section__head reveal">
+        <span class="section__index">02</span>
+        <h2 class="section__title">Coffee &amp; craft</h2>
+        <p class="section__note">Beyond engineering, I find my rhythm in a cup of coffee.</p>
+      </div>
+      <div class="coffee">
+        <div class="coffee__text reveal">
+          <p class="coffee__lead">The focus it takes to pour steamed milk into a leaf isn't so different from writing a clean piece of code.</p>
+          <p>
+            I once worked in a café and learned latte art — patience, feel, and an almost stubborn eye for detail.
+            A good coffee is how I recalibrate each day: slow down, do one small thing well,
+            then carry that steadiness back to the keyboard.
+          </p>
+          <p class="coffee__sig">— Precision can be gentle, too.</p>
+        </div>
+        <div class="coffee__shots" id="coffee-grid">
+          <!-- 由 data/coffee.js + js/main.js 動態產生 -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== What I do (Work) ===== -->
+    <section class="section" id="work">
+      <div class="section__head reveal">
+        <span class="section__index">03</span>
+        <h2 class="section__title">What I do</h2>
+        <p class="section__note">The work itself is mostly behind the firewall — here's the shape of it.</p>
+      </div>
+      <div class="grid grid--cards2">
+        <article class="card reveal">
+          <h3>Data &amp; Visualization</h3>
+          <p>Turning messy data into a picture you can decide with. Power BI, cleaning and transformation, making the numbers speak.</p>
+        </article>
+        <article class="card reveal">
+          <h3>Automation</h3>
+          <p>Automating the repetitive with shell and Python — from test flows to quality tools. Less manual work, more reliability.</p>
+        </article>
+        <article class="card reveal">
+          <h3>AI at Work</h3>
+          <p>Exploring how to bring LLMs and AI workflows into real processes — not for the hype, but to genuinely save time.</p>
+        </article>
+        <article class="card reveal">
+          <h3>Systems &amp; Quality</h3>
+          <p>System testing, Linux environments, stability. Understanding the root cause — not just getting it to run.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- ===== Off the clock ===== -->
+    <section class="section section--alt" id="life">
+      <div class="section__head reveal">
+        <span class="section__index">04</span>
+        <h2 class="section__title">Off the clock</h2>
+        <p class="section__note">The engineer logs off — here's the rest of me.</p>
+      </div>
+      <div class="grid grid--cards">
+        <article class="card reveal">
+          <h3>On the court</h3>
+          <p>Basketball is my reset button. I play regularly — nothing clears the head like a good run.</p>
+        </article>
+        <article class="card reveal">
+          <h3>Lifting &amp; golf</h3>
+          <p>Strength training keeps me steady; golf keeps teaching me a patience I'm still working on.</p>
+        </article>
+        <article class="card reveal">
+          <h3>On the road</h3>
+          <p>I've wandered much of Europe with a camera in hand. Travel is where I collect stories — and light.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- ===== About ===== -->
+    <section class="section" id="about">
+      <div class="section__head reveal">
+        <span class="section__index">05</span>
+        <h2 class="section__title">About</h2>
+      </div>
+      <div class="about reveal">
+        <p class="about__lead">
+          I'm Ruby, a software quality engineer based in Taiwan.
+        </p>
+        <p>
+          I've lived across data, Linux, testing, quality, and automation.
+          These days I focus on data visualization and automation tools for the quality team,
+          and the question I care about most: <em>how to actually put AI to work, not just demo it.</em>
+        </p>
+        <p>
+          I believe good engineering and good photography share one thing: <strong>taking something complex and making it feel obvious.</strong>
+          I'm not one to stuff a résumé with keywords — I care more about whether I'm growing, and whether I've thought a problem down to its core.
+        </p>
+        <ul class="about__facts">
+          <li><span>Now</span>Senior SW Engineer @ Dell</li>
+          <li><span>Focus</span>Data · Automation · Quality · AI</li>
+          <li><span>Location</span>Taiwan</li>
+          <li><span>Off-hours</span>Coffee / Basketball / Photography / Travel</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ===== Contact ===== -->
+    <section class="section section--contact" id="contact">
+      <div class="contact reveal">
+        <span class="section__index">06</span>
+        <h2 class="contact__title">Let's talk</h2>
+        <p class="contact__sub">Collaboration, a chat, or just to share a good photo — all welcome.</p>
+        <a href="mailto:hicruby@gmail.com" class="contact__mail">hicruby@gmail.com</a>
+        <div class="contact__social">
+          <a href="https://instagram.com/" target="_blank" rel="noopener" class="ig-social">Instagram</a>
+          <a href="https://github.com/" target="_blank" rel="noopener" class="gh-social">GitHub</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <span>© <span id="year"></span> Ruby H</span>
+    <span class="footer__made">Built with care · Engineering precision, a warmth for living</span>
+  </footer>
+
+  <!-- Data (改這幾個檔就能加內容，不用動版型) -->
+  <script src="data/site.js"></script>
+  <script src="data/photos.js"></script>
+  <script src="data/coffee.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
