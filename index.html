@@ -20,6 +20,7 @@
     <a href="#lens">lens</a>
     <a href="#work">work</a>
     <a href="#coffee">coffee</a>
+    <a href="#book">book</a>
     <a href="#about">about</a>
     <a href="#contact">contact</a>
   </nav>
@@ -141,10 +142,24 @@
     </div>
   </section>
 
+  <!-- BOOK -->
+  <section class="section section--alt rule" id="book">
+    <div class="wrap">
+      <div class="shead reveal">
+        <span class="shead__idx">06 / BOOK</span>
+        <h2 class="shead__title">Grab a coffee ☕</h2>
+        <p class="shead__note">聊專案合作、交流咖啡，或只是喝一杯 — 挑個順的時段就好。／ Project chats, coffee talk, or just a cup — pick a slot below.</p>
+      </div>
+      <div class="book reveal">
+        <div id="cal-inline"></div>
+      </div>
+    </div>
+  </section>
+
   <!-- CONTACT -->
   <section class="section rule" id="contact">
     <div class="wrap contact reveal">
-      <span class="shead__idx">06 / CONTACT</span>
+      <span class="shead__idx">07 / CONTACT</span>
       <h2 class="contact__title" style="margin-top:.8rem">Let's talk.</h2>
       <a href="mailto:hicruby@gmail.com" class="contact__mail">hicruby@gmail.com →</a>
       <div class="contact__soc">
@@ -165,5 +180,22 @@
 <script src="data/photos.js"></script>
 <script src="data/coffee.js"></script>
 <script src="js/main.js"></script>
+
+<!-- Cal.com inline embed（來喝杯咖啡 預約） -->
+<script type="text/javascript">
+  (function (C, A, L) { let p = function (a, ar) { a.q.push(ar); }; let d = C.document; C.Cal = C.Cal || function () { let cal = C.Cal; let ar = arguments; if (!cal.loaded) { cal.ns = {}; cal.q = cal.q || []; d.head.appendChild(d.createElement("script")).src = A; cal.loaded = true; } if (ar[0] === L) { const api = function () { p(api, arguments); }; const namespace = ar[1]; api.q = api.q || []; if (typeof namespace === "string") { cal.ns[namespace] = cal.ns[namespace] || api; p(cal.ns[namespace], ar); p(cal, ["initNamespace", namespace]); } else p(cal, ar); return; } p(cal, ar); }; })(window, "https://app.cal.com/embed/embed.js", "init");
+  Cal("init", "grab-a-coffee", { origin: "https://cal.com" });
+  Cal.ns["grab-a-coffee"]("inline", {
+    elementOrSelector: "#cal-inline",
+    config: { layout: "month_view" },
+    calLink: "ruby-hsiao/grab-a-coffee",
+  });
+  Cal.ns["grab-a-coffee"]("ui", {
+    theme: "light",
+    cssVarsPerTheme: { light: { "cal-brand": "#1f2bff" } },
+    hideEventTypeDetails: false,
+    layout: "month_view",
+  });
+</script>
 </body>
 </html>

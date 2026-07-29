@@ -129,6 +129,10 @@ a{color:inherit;text-decoration:none}
 .coffee__grid a:hover img{filter:none;transform:scale(1.03)}
 @media(max-width:720px){.coffee{grid-template-columns:1fr}}
 
+/* ---- booking (Cal.com inline embed) ---- */
+.book{border:1px solid var(--ink);background:var(--paper)}
+.book #cal-inline{width:100%;min-height:640px;height:clamp(640px,82vh,940px);overflow:auto}
+
 /* ---- about ---- */
 .about{display:grid;grid-template-columns:1.3fr 1fr;gap:clamp(1.5rem,5vw,4rem)}
 .about__lead{font-weight:500;font-size:clamp(1.3rem,2.6vw,1.9rem);line-height:1.35;letter-spacing:-.015em}
