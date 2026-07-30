@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>404 — Ruby Hsiao</title>
+<meta name="robots" content="noindex" />
+<link rel="icon" href="/favicon.ico" sizes="48x48" />
+<link rel="icon" href="/assets/icons/icon-32.png" type="image/png" sizes="32x32" />
+<meta name="theme-color" content="#f3f2ee" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="/css/style.css" />
+<style>
+  .nf{min-height:100svh;display:flex;flex-direction:column;justify-content:center;padding:6rem 0 4rem}
+  .nf__code{font-family:var(--mono);font-size:clamp(4rem,18vw,11rem);line-height:1;letter-spacing:-.04em;color:var(--accent)}
+  .nf__title{font-weight:600;font-size:clamp(1.6rem,5vw,2.8rem);letter-spacing:-.02em;margin-top:1rem}
+  .nf__note{font-family:var(--mono);font-size:.82rem;color:var(--ink-2);margin-top:1rem;max-width:44ch}
+  .nf__cta{margin-top:2.6rem;display:flex;flex-wrap:wrap;gap:1.6rem}
+</style>
+</head>
+<body>
+<header class="nav is-scrolled">
+  <a href="/" class="nav__brand">RUBY<b>_</b>HSIAO</a>
+  <nav class="nav__links"><a href="/">home</a></nav>
+</header>
+
+<main class="nf wrap">
+  <p class="mono"><span class="tick">//</span> HTTP 404 · NOT FOUND</p>
+  <p class="nf__code">404</p>
+  <h1 class="nf__title">This page didn't hold.</h1>
+  <p class="nf__note">The link is broken or the page moved. Everything else is still standing — head back to the front page.</p>
+  <div class="nf__cta">
+    <a href="/" class="link">BACK HOME →</a>
+    <a href="/#lens" class="link">SEE PHOTOS →</a>
+    <a href="mailto:hicruby@gmail.com" class="link">EMAIL ME →</a>
+  </div>
+</main>
+
+<footer class="footer wrap rule">
+  <span>© <span id="year"></span> RUBY HSIAO</span>
+  <span>BUILT WITH CARE · <span lang="zh-Hant">工程的精準，生活的溫度</span></span>
+</footer>
+
+<script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+</body>
+</html>

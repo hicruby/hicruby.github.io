@@ -5,15 +5,58 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Ruby Hsiao — Software Engineer</title>
 <meta name="description" content="Ruby Hsiao — software engineer working in data, automation and AI. And a camera after hours." />
+<meta name="author" content="Ruby Hsiao" />
+<link rel="canonical" href="https://hicruby.github.io/" />
+
+<!-- social preview -->
 <meta property="og:title" content="Ruby Hsiao — Software Engineer" />
 <meta property="og:description" content="I build systems that hold — engineering precision, a life with light." />
 <meta property="og:type" content="website" />
+<meta property="og:url" content="https://hicruby.github.io/" />
+<meta property="og:site_name" content="Ruby Hsiao" />
+<meta property="og:locale" content="en_US" />
+<meta property="og:image" content="https://hicruby.github.io/assets/og.jpg" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:image:alt" content="Ruby Hsiao — I build systems that hold." />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Ruby Hsiao — Software Engineer" />
+<meta name="twitter:description" content="I build systems that hold — engineering precision, a life with light." />
+<meta name="twitter:image" content="https://hicruby.github.io/assets/og.jpg" />
+
+<!-- icons & PWA -->
+<link rel="icon" href="favicon.ico" sizes="48x48" />
+<link rel="icon" href="assets/icons/icon-32.png" type="image/png" sizes="32x32" />
+<link rel="apple-touch-icon" href="assets/icons/icon-180.png" />
+<link rel="manifest" href="manifest.webmanifest" />
+<meta name="theme-color" content="#f3f2ee" />
+<meta name="apple-mobile-web-app-title" content="Ruby Hsiao" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="mobile-web-app-capable" content="yes" />
+
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
 <link rel="stylesheet" href="css/style.css" />
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Ruby Hsiao",
+  "url": "https://hicruby.github.io/",
+  "image": "https://hicruby.github.io/assets/og.jpg",
+  "email": "mailto:hicruby@gmail.com",
+  "jobTitle": "Senior Software Engineer",
+  "description": "Software engineer working in data, automation and AI. And a camera after hours.",
+  "address": { "@type": "PostalAddress", "addressCountry": "TW", "addressLocality": "Taipei" },
+  "knowsAbout": ["Data Visualization", "Automation", "Software Quality Engineering", "Linux", "Python", "Power BI", "AI Workflows", "Photography"],
+  "sameAs": ["https://github.com/hicruby", "https://www.instagram.com/hifotogram/"]
+}
+</script>
 </head>
 <body>
+<a class="skip" href="#top">Skip to content</a>
 <header class="nav" id="nav">
   <a href="#top" class="nav__brand">RUBY<b>_</b>HSIAO</a>
   <nav class="nav__links">
@@ -71,7 +114,7 @@
       <div class="shead reveal">
         <span class="shead__idx">02 / LENS</span>
         <h2 class="shead__title">Through the lens</h2>
-        <p class="shead__note">Life in light and shadow. Hover to develop. More on Instagram.</p>
+        <p class="shead__note">Life in light and shadow. Tap any frame to open it full size. More on Instagram.</p>
       </div>
       <div class="gal reveal" id="gallery">
         <!-- 由 data/photos.js + js/main.js 動態產生 -->
@@ -176,25 +219,15 @@
 
 <footer class="footer wrap rule">
   <span>© <span id="year"></span> RUBY HSIAO</span>
-  <span>BUILT WITH CARE · 工程的精準，生活的溫度</span>
+  <span>BUILT WITH CARE · <span lang="zh-Hant">工程的精準，生活的溫度</span></span>
 </footer>
 
 <!-- Data（改這幾個檔就能加內容，不用動版型） -->
 <script src="data/site.js"></script>
 <script src="data/photos.js"></script>
 <script src="data/coffee.js"></script>
+<script src="data/images.js"></script>
+<!-- Cal.com 的預約嵌入改在 main.js 裡延後載入（捲到 #book 附近才抓） -->
 <script src="js/main.js"></script>
-
-<!-- Cal.com inline embed（來喝杯咖啡 預約） -->
-<script type="text/javascript">
-  (function (C, A, L) { let p = function (a, ar) { a.q.push(ar); }; let d = C.document; C.Cal = C.Cal || function () { let cal = C.Cal; let ar = arguments; if (!cal.loaded) { cal.ns = {}; cal.q = cal.q || []; d.head.appendChild(d.createElement("script")).src = A; cal.loaded = true; } if (ar[0] === L) { const api = function () { p(api, arguments); }; const namespace = ar[1]; api.q = api.q || []; if (typeof namespace === "string") { cal.ns[namespace] = cal.ns[namespace] || api; p(cal.ns[namespace], ar); p(cal, ["initNamespace", namespace]); } else p(cal, ar); return; } p(cal, ar); }; })(window, "https://app.cal.com/embed/embed.js", "init");
-  Cal("init", "grab-a-coffee", { origin: "https://cal.com" });
-  Cal.ns["grab-a-coffee"]("ui", {
-    theme: "light",
-    cssVarsPerTheme: { light: { "cal-brand": "#1f2bff" } },
-    hideEventTypeDetails: false,
-    layout: "month_view",
-  });
-</script>
 </body>
 </html>
