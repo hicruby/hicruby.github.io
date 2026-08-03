@@ -63,6 +63,62 @@
     if (site.github) a.href = site.github;
   });
 
+  /* ---------- work：case study（data/work.js） ---------- */
+
+  var workEl = document.getElementById("work-list");
+  if (workEl && Array.isArray(window.WORK) && window.WORK.length) {
+    workEl.innerHTML = window.WORK
+      .map(function (w, i) {
+        var no = ("00" + (i + 1)).slice(-3);
+
+        var steps = (w.approach || [])
+          .map(function (s) { return "<li>" + esc(s) + "</li>"; })
+          .join("");
+
+        var metrics = (w.metrics || [])
+          .filter(function (m) { return m && m.v; })
+          .map(function (m) {
+            return (
+              '<div class="cs__metric"><b class="cs__mv">' + esc(m.v) +
+              '</b><span class="cs__mk">' + esc(m.k) + "</span></div>"
+            );
+          })
+          .join("");
+
+        return (
+          '<article class="cs reveal">' +
+          '<header class="cs__head">' +
+          '<span class="cs__no">' + no + "</span>" +
+          '<h3 class="cs__title">' + esc(w.title) + "</h3>" +
+          (w.tag ? '<span class="cs__tag">[ ' + esc(w.tag) + " ]</span>" : "") +
+          "</header>" +
+          '<div class="cs__body">' +
+          "<div>" +
+          (w.problem
+            ? '<p class="cs__label">Problem</p><p class="cs__p">' + esc(w.problem) + "</p>"
+            : "") +
+          (steps
+            ? '<p class="cs__label">Approach</p><ul class="cs__steps">' + steps + "</ul>"
+            : "") +
+          "</div>" +
+          '<aside class="cs__side">' +
+          (metrics ? '<div class="cs__metrics">' + metrics + "</div>" : "") +
+          (w.stack
+            ? '<p class="cs__label">Stack</p><p class="cs__stack">' + esc(w.stack) + "</p>"
+            : "") +
+          (w.note ? '<p class="cs__note">' + esc(w.note) + "</p>" : "") +
+          (w.url
+            ? '<a class="link cs__link" href="' + esc(w.url) +
+              '" target="_blank" rel="noopener">VIEW ON GITHUB →</a>'
+            : "") +
+          "</aside>" +
+          "</div>" +
+          "</article>"
+        );
+      })
+      .join("");
+  }
+
   /* ---------- galleries ---------- */
 
   // 每個影廊各自成一組，燈箱只在同一組內前後切換

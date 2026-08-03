@@ -29,6 +29,7 @@ python3 -m http.server 8080
 ├── favicon.ico
 ├── data/
 │   ├── site.js              # IG / GitHub 連結
+│   ├── work.js              # Work 的 case study ← 加作品改這裡
 │   ├── photos.js            # 攝影列表 ← 加照片改這裡
 │   ├── coffee.js            # 咖啡 / 拉花列表
 │   └── images.js            # 縮圖對照表（自動產生，別手改）
@@ -44,6 +45,10 @@ python3 -m http.server 8080
 ## 編輯
 
 - **改連結**：`data/site.js` 填 `instagram`、`github`。
+- **加作品**：`data/work.js` 複製一個 `{ ... }`，填 `problem`（原本卡在哪）、
+  `approach`（你的決定與取捨）、`metrics`（結果數字）。
+  **寫公司的東西之前先過這條線**：不寫產品代號、客戶名、內部系統名、絕對營收數字、截圖。
+  判準是「這段話講給同業的朋友聽，你會不會猶豫？」會猶豫就再抽象一層。
 - **換照片**：圖丟進 `assets/img/web/`，在 `data/photos.js`（或 `data/coffee.js`）加一筆
   `{ image: "assets/img/web/檔名.jpg", caption: "說明" }`。
   沒填 `image` 會顯示佔位色塊；填了 `url` 就變成外連，不填則點擊開燈箱。
