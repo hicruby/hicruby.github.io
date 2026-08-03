@@ -1,4 +1,4 @@
-/* Ruby H — Style A "Blueprint"
+/* Ruby H — "Blueprint"
    互動：nav 捲動狀態 / 目前區塊、scroll reveal、從 data/*.js 渲染影廊與咖啡、
         照片燈箱、Cal.com 延後載入、Service Worker 註冊 */
 (function () {
